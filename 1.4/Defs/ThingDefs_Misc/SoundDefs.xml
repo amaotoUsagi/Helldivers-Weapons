@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+<!-- ==================== Melee ==================== -->
+
+<!-- ==================== Pistol ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDPistol</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Pistol_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDRevolver</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Revolver_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>30</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDSinge</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Singe_Fire</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Rifle ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDAR19</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Liberator_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDAR22</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Patriot_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDAR20</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Justice_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDAR14</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Paragon_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>100</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== LMG ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDMG105</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Stalwart_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Shotgun ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDSG225</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/ShotgunAuto_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDSG8</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/ShotgunPump_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>50</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== SMG ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDSMG45</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Defender_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDMP98</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Knight_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDSMG34</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Ninja_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Precision ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDCamper</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Sniper_Fire</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDRailgun</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Railgun_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>100</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDConstitution</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Constitution_Fire</clipPath>
+                </li>
+                </grains>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Explosive ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDCR9</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Suppressor_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>50</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDPlasmaExplosion</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Plasma_Explode</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDScorcher</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Scorcher_Fire</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Laser ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDLaser</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Laser_Fire</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== ARC ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDARC_Aim</defName>  
+        <context>MapOnly</context>
+        <sustain>True</sustain>
+        <priorityMode>PrioritizeNearest</priorityMode>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/ARC_Aim</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDARC</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/ARC_Fire</clipPath>
+                </li>
+                </grains>   
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Flamer ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDFlamer</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Flamer_Fire</clipPath>
+                </li>
+                </grains>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== HEAVY ==================== -->
+
+<!-- ==================== Antipersonnel ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDMG</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/MG_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>25</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDDumDum</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/DumDum_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>80</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Chemical ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDAvenger</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Avenger_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>5</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Explosives ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDObliterator</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/GrenadeLauncher_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>50</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+<!-- ==================== Anti-tank ==================== -->
+
+    <SoundDef>
+        <defName>Shot_THDLauncher</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Launcher_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>50</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>Shot_THDRumbler</defName>  
+        <context>MapOnly</context>
+        <maxVoices>8</maxVoices>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                <li Class="AudioGrain_Clip">
+                    <clipPath>Weapons/Rumbler_Fire</clipPath>
+                </li>
+                </grains>
+                <volumeRange>20</volumeRange>
+                <sustainLoop>False</sustainLoop>
+                <pitchRange>0.90~1.00</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ResearchProjectDef>
+		<defName>Helldivers_weapons</defName>
+		<label>Basic Helldiver Weaponry</label>
+		<tab>Helldivers_Research</tab>
+		<description>Basic weaponry for any Helldiver, mainly uses conventional ammunition.</description>
+		<baseCost>1250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_ChemicalTech</defName>
+		<label>Chemical and Incendiaries</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of Chemical and Incendiary Equipment.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+	<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_LaserTech</defName>
+		<label>Laser Tech</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of Laser Weaponry.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+	<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_ArcTech</defName>
+		<label>Arc Tech</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of Arc Weaponry.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+	<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_PlasmaTech</defName>
+		<label>Plasma Weaponry</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of Arc Weaponry.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+	<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_Weapons_Heavy</defName>
+		<label>Heavy Weapons</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of much heavier equipment.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+    <researchViewX>2</researchViewX>
+	<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Helldivers_Weapons_Launchers</defName>
+		<label>Launchers</label>
+		<tab>Helldivers_Research</tab>
+		<description>Allow for usage of explosive launchers.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Helldivers_weapons</li>
+		</prerequisites>
+    <researchViewX>2</researchViewX>
+	<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<!--ResearchProjectDef>
+		<defName>Helldivers_Melee</defName>
+		<label>Helldiver Melee weapons</label>
+		<tab>Helldivers_Research</tab>
+		<description>Placeholder. Ranges from vibrating blades to plasma blades</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>LongBlades</li>
+			<li>Machining</li>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef-->
+
+</Defs>

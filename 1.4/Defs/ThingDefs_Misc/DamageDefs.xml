@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+        <DamageDef ParentName="Bullet">
+            <defName>LASBurns</defName>
+            <label>laser burn</label>
+            <damageEffecter>Effecter_LASImpact</damageEffecter>
+            <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+            <explosionCellFleck>Fleck_LASHit</explosionCellFleck>
+            <soundExplosion>Explosion_EMP</soundExplosion>
+            <deathMessage>{0} has burned to death.</deathMessage>
+            <hediff>Burn</hediff>
+            <makesBlood>false</makesBlood>
+            <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+        </DamageDef>
+
+        <DamageDef ParentName="Flame">
+            <defName>ToxicBurns</defName>
+            <label>toxic burns</label>
+            <workerClass>DamageWorker_AddInjury</workerClass>
+            <hasForcefulImpact>false</hasForcefulImpact>
+            <makesBlood>false</makesBlood>
+            <canInterruptJobs>false</canInterruptJobs>
+            <externalViolence>true</externalViolence>
+            <deathMessage>{0} has died to toxins.</deathMessage>
+            <minDamageToFragment>5</minDamageToFragment>
+            <defaultDamage>10</defaultDamage>
+            <additionalHediffs>
+                <li>
+                    <hediff>HelldiverToxin</hediff>
+                    <severityPerDamageDealt>0.01</severityPerDamageDealt>
+                    <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                    <inverseStatScaling>true</inverseStatScaling>
+                    <victimSeverityScalingByInvBodySize>false</victimSeverityScalingByInvBodySize>
+                </li>
+            </additionalHediffs>
+            <impactSoundType>Toxic</impactSoundType>
+            <damageEffecter>Impact_Toxic</damageEffecter>
+            <combatLogRules>Damage_Flame</combatLogRules>
+            <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+        </DamageDef>
+        
+</Defs>

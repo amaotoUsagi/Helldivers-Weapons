@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- ================== Laser Effects ================== -->
+	
+		<ThingDef ParentName="MoteBase">
+			<defName>Mote_LASHit</defName>
+            <graphicData>
+                <drawSize>1.0</drawSize>
+                <drawOffset>(0,0,0.65)</drawOffset>
+                <color>(255, 192, 52, 150)</color>
+                <texPath>Things/Mote/BrightFlash</texPath>
+                <shaderType>MoteGlow</shaderType>
+            </graphicData>
+			<altitudeLayer>MoteOverhead</altitudeLayer>
+			<mote>
+				<fadeInTime>0.1</fadeInTime>
+				<solidTime>0.10</solidTime>
+				<fadeOutTime>0.5</fadeOutTime>
+				<!--growthRate>15</growthRate-->
+			</mote>
+		</ThingDef>
+
+        <FleckDef Name="Fleck_LASHit" ParentName="FleckBase">
+            <defName>Fleck_LASHit</defName>
+            <graphicData>
+                <drawSize>1.0</drawSize>
+                <drawOffset>(0,0,0.65)</drawOffset>
+                <color>(255, 192, 52, 150)</color>
+                <texPath>Things/Mote/BrightFlash</texPath>
+                <shaderType>MoteGlow</shaderType>
+            </graphicData>
+            <altitudeLayer>MoteOverhead</altitudeLayer>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.10</solidTime>
+            <fadeOutTime>0.5</fadeOutTime>
+        </FleckDef>
+
+        <EffecterDef Name="Effecter_LASImpact">
+            <defName>Effecter_LASImpact</defName>
+            <children>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_LASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>1.9</min>
+                        <max>2.5</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_LASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>0.9</min>
+                        <max>1.3</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+            </children>
+            <offsetTowardsTarget>
+                <min>0.0</min>
+                <max>0.0</max>
+            </offsetTowardsTarget>
+            <positionRadius>0.01</positionRadius>
+        </EffecterDef>
+
+    <!-- ================== Plasma Effects ================== -->
+
+        <FleckDef Name="Fleck_PLASHit" ParentName="FleckBase">
+            <defName>Fleck_PLASHit</defName>
+            <graphicData>
+                <drawSize>1.0</drawSize>
+                <drawOffset>(0,0,0.65)</drawOffset>
+                <color>(93, 180, 197, 150)</color>
+                <texPath>Things/Mote/BrightFlash</texPath>
+                <shaderType>MoteGlow</shaderType>
+            </graphicData>
+            <altitudeLayer>MoteOverhead</altitudeLayer>
+            <fadeInTime>0.1</fadeInTime>
+            <solidTime>0.05</solidTime>
+            <fadeOutTime>0.5</fadeOutTime>
+        </FleckDef>
+
+        <EffecterDef Name="Effecter_PLASImpact">
+            <defName>Effecter_PLASImpactSmall</defName>
+            <children>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_PLASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>1.9</min>
+                        <max>2.5</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_PLASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>0.9</min>
+                        <max>1.3</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+            </children>
+            <offsetTowardsTarget>
+                <min>0.0</min>
+                <max>0.0</max>
+            </offsetTowardsTarget>
+            <positionRadius>0.01</positionRadius>
+        </EffecterDef>
+
+        <EffecterDef>
+            <defName>Effecter_PLASImpactLarge</defName>
+            <children>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_PLASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>5.7</min>
+                        <max>7.5</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+                <li>
+                    <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                    <positionRadius>0.1</positionRadius>
+                    <fleckDef>Fleck_PLASHit</fleckDef>
+                    <burstCount>
+                        <min>1</min>
+                        <max>1</max>
+                    </burstCount>
+                    <scale>
+                        <min>2.7</min>
+                        <max>3.75</max>
+                    </scale>
+                    <spawnLocType>OnSource</spawnLocType>
+                </li>
+            </children>
+            <offsetTowardsTarget>
+                <min>0.0</min>
+                <max>0.0</max>
+            </offsetTowardsTarget>
+            <positionRadius>0.01</positionRadius>
+        </EffecterDef>
+
+</Defs>

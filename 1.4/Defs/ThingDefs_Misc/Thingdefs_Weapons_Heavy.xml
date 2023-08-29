@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- ==================== Heavy - Antipersonnel ==================== -->
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_MGMachinegun</defName>
+    <label>MG-94 Machinegun</label>
+    <description>"The MG-94 is a rapid-fire machine gun used to achieve fire superiority. On average, it is about as powerful as an assault rifle but with a substantially larger magazine."\n- Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/MG94MachineGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.04</ShotSpread>
+      <SwayFactor>1.71</SwayFactor>
+      <Bulk>12.63</Bulk>
+      <Mass>11.80</Mass>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>95</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Chemfuel>15</Chemfuel>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.12</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <warmupTime>1.3</warmupTime>
+        <range>62</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>150</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>Bipod_LMG</li>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.30,1.30</DrawSize>
+        <DrawOffset>0.10,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_MGXStorm</defName>
+    <label>MGX-94 Machinegun</label>
+    <description>"The MGX-42 is a magazineless, firing 300 rounds of caseless ammunition that are stacked in the multiple barrels and fired electronically making the weapon almost void of mechanical parts and cheap to manufacture."\n- Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/MGX42MachineGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>30500</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.42</SwayFactor>
+      <Bulk>9.70</Bulk>
+      <Mass>4.45</Mass>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.89</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+        <burstShotCount>20</burstShotCount>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <warmupTime>1.1</warmupTime>
+        <range>62</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDMG</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>300</magazineSize>
+        <reloadTime>9.2</reloadTime>
+        <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>10</aimedBurstShotCount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.30,1.30</DrawSize>
+        <DrawOffset>0.10,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_ACDumDum</defName>
+    <label>AC-22 Dum-Dum</label>
+    <description>"This 20mm Autocannon is a staple of Helldiver weaponry. Usually reserved for APCs and other vehicles, this is a shoulder carried version for the Helldiver on foot. It is an extremely bulky weapon, but performs very well against medium-armored targets."\n- Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/AC22DumDum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>30500</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>3.80</SwayFactor>
+      <Bulk>9.70</Bulk>
+      <Mass>24.00</Mass>
+      <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>4.67</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_20x102mmNATO_AP</defaultProjectile>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+        <warmupTime>2.6</warmupTime>
+        <range>68</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDDumDum</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>20</magazineSize>
+        <reloadTime>9.2</reloadTime>
+        <ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.5,1.5</DrawSize>
+        <DrawOffset>0.00,0.15</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+    <ThingDef ParentName="Helldivers_MakeableRanged">
+        <defName>Helldivers_LASLaserCannon</defName>
+        <label>LAS-98 Laser Cannon</label>
+        <description>"This cannon is built on upscaled, weaponized laser technology. It fires a heavy, continuous laser beam that consumes no ammunition until it overheats. The weapon needs to be loaded with heat dump canisters to fire."\n- Armory Description</description>
+        <graphicData>
+            <texPath>Things/Weapons/Helldivers/LAS98LaserCannon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>58500</WorkToMake>
+            <SightsEfficiency>1.00</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>1.24</SwayFactor>
+            <Bulk>12.00</Bulk>
+            <Mass>42.00</Mass>
+            <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>305</Plasteel>
+            <ComponentIndustrial>11</ComponentIndustrial>
+            <Chemfuel>10</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+              <li>Helldivers_Weapons_Heavy</li>
+              <li>Helldivers_LaserTech</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>0.01</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_HelldiverLaserHeavy</defaultProjectile>
+                <burstShotCount>40</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>2.1</warmupTime>
+                <range>62</range>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>Shot_THDLaser</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+            </verbs>
+            <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>400</magazineSize>
+                <reloadTime>9.2</reloadTime>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>SuppressFire</aiAimMode>
+                <aimedBurstShotCount>20</aimedBurstShotCount>
+                <noSingleShot>TRUE</noSingleShot>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>CE_AI_Suppressive</li>
+            <li>NoSwitch</li>
+        </weaponTags>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <chanceFactor>1.5</chanceFactor>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.55</cooldownTime>
+                <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="CombatExtended.GunDrawExtension">
+                <DrawSize>1.50,1.50</DrawSize>
+                <DrawOffset>0.00,0.10</DrawOffset>
+            </li>
+            <li Class="ProjectileImpactFX.BarrelOffsetExtension">
+              <barrellength>2</barrellength>
+              <muzzleFlareDef>Mote_ActivatorCountdownGlow</muzzleFlareDef>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+<!-- ==================== Incendiary / Chemical ==================== -->
+  
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_FLAMIncinerator</defName>
+    <label>FLAM-40 Incinerator</label>
+    <description>"A compact flamethrower capable of projecting flames several meters. Enemies hit with this weapon will start to burn."\n- Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/FLAM40Incinerator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.85</SwayFactor>
+      <Bulk>10.10</Bulk>
+      <Mass>7.00</Mass>
+      <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_ChemicalTech</li>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.24</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Flamethrower_Napalm</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDFlamer</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>150</magazineSize>
+        <reloadTime>4.9</reloadTime>
+        <ammoSet>AmmoSet_Flamethrower</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <noSingleShot>TRUE</noSingleShot>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.00,1.00</DrawSize>
+        <DrawOffset>0.2,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_TOXAvenger</defName>
+    <label>TOX-13 Avenger</label>
+    <description>"A design very similar to the standard issue flamethrower, this high-pressure weapon dispenses a toxic sludge. The toxin causes heavy trauma to the nervous system and slows down afflicted individuals as well as causing brain damage. It was developed by Dr. Junko under the 2079 act of self-defence research and has been tested extensively on live targets."\n- Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/TOX13Avenger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>31000</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>2.02</SwayFactor>
+      <Bulk>10.10</Bulk>
+      <Mass>8.50</Mass>
+      <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_ChemicalTech</li>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.22</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Toxic_Stream</defaultProjectile>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <warmupTime>0.6</warmupTime>
+        <range>12</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDAvenger</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>150</magazineSize>
+        <reloadTime>4.9</reloadTime>
+        <ammoSet>AmmoSet_Avenger</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>Snapshot</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <noSingleShot>TRUE</noSingleShot>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.00,1.00</DrawSize>
+        <DrawOffset>0.2,-0.05</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+<!-- ==================== Explosives ==================== -->
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_GLObliterator</defName>
+    <label>GL-8 Obliterator</label>
+    <description>"The indirect fire grenade launcher fires impact-detonated rifle grenades at a high rate of fire. Is especially useful in tight spaces."\n-Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/Obliterator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>35500</WorkToMake>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.18</ShotSpread>
+      <SwayFactor>1.31</SwayFactor>
+      <Bulk>8.90</Bulk>
+      <Mass>6.20</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>55</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>2.16</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+        <warmupTime>1.1</warmupTime>
+        <range>48</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDObliterator</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>8</magazineSize>
+        <reloadTime>7.8</reloadTime>
+        <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.20,1.20</DrawSize>
+        <DrawOffset>0.10,0.00</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_MLSXCommand</defName>
+    <label>MLS-4X Commando</label>
+    <description>"The 4X Missile Launcher System is a shoulder carried, multiple missile system. However, most of the missile guidance system has been lost and is now mostly a rocket launcher system"\n-Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/MLS4XCommando</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>33000</WorkToMake>
+      <SightsEfficiency>1.10</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>1.45</SwayFactor>
+      <Bulk>12.83</Bulk>
+      <Mass>5.22</Mass>
+      <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Launchers</li>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.1</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Helldiver50mmRocket_HE</defaultProjectile>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <warmupTime>2</warmupTime>
+        <range>55</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+		<li Class="CombatExtended.CompProperties_Charges">
+			 <chargeSpeeds>
+			   <li>25</li>
+			</chargeSpeeds>
+	    </li>
+        <li Class="CombatExtended.CompProperties_AmmoUser">
+            <magazineSize>4</magazineSize>
+            <reloadTime>8.6</reloadTime>
+            <ammoSet>AmmoSet_Helldiver50mmRocket</ammoSet>
+        </li>
+        <li Class="CombatExtended.CompProperties_FireModes">
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aimedBurstShotCount>2</aimedBurstShotCount>
+        </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.50,1.50</DrawSize>
+        <DrawOffset>-0.05,0.10</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+<!-- ==================== Anti-Tank ==================== -->
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_RLRecoillessRifle</defName>
+    <label>RL-112 Recoilless Rifle</label>
+    <description>"A powerful multi-purpose recoilless rifle for taking out larger targets."\n-Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/RL112RecoillessRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>19500</WorkToMake>
+      <SightsEfficiency>2.24</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>1.65</SwayFactor>
+      <Bulk>10.50</Bulk>
+      <Mass>6.60</Mass>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Launchers</li>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.1</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Helldiver84x246mmR_HEAT</defaultProjectile>
+        <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+        <warmupTime>2.1</warmupTime>
+        <range>62</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>8.6</reloadTime>
+        <ammoSet>AmmoSet_Helldiver84x246mmR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.30,1.30</DrawSize>
+        <DrawOffset>0.00,0.10</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_EAT</defName>
+    <label>EAT-17</label>
+    <description>"The EAT is a one-use rocket capable of damaging heavily armored targets."\n-Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/EAT17</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5200</WorkToMake>
+      <SightsEfficiency>2.15</SightsEfficiency>
+      <ShotSpread>0.2</ShotSpread>
+      <SwayFactor>1.43</SwayFactor>
+      <Bulk>8.00</Bulk>
+      <Mass>4.00</Mass>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>85</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <productCount>5</productCount>
+      <workAmount>26000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <recipeUsers>
+          <li>TableMachining</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        <researchPrerequisite>Helldivers_weapons</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.1</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_84mmAT4_HEAT</defaultProjectile>
+        <ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+        <warmupTime>2</warmupTime>
+        <range>55</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDLauncher</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.30,1.30</DrawSize>
+        <DrawOffset>0.0,0.10</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Helldivers_MakeableRanged">
+    <defName>Helldivers_MRumbler</defName>
+    <label>M-25 Rumbler</label>
+    <description>"The indirect fire grenade launcher fires impact-detonated rifle grenades at a high rate of fire. Is especially useful in tight spaces."\n-Armory Description</description>
+    <graphicData>
+      <texPath>Things/Weapons/Helldivers/M25Rumbler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+      <li>LongShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>39500</WorkToMake>
+      <SightsEfficiency>0.80</SightsEfficiency>
+      <ShotSpread>0.45</ShotSpread>
+      <SwayFactor>1.38</SwayFactor>
+      <Bulk>11.90</Bulk>
+      <Mass>8.80</Mass>
+      <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+        <researchPrerequisites>
+          <li>Helldivers_Weapons_Launchers</li>
+          <li>Helldivers_Weapons_Heavy</li>
+        </researchPrerequisites>
+    </recipeMaker>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>8.40</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <warmupTime>1.3</warmupTime>
+        <range>86</range>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>Shot_THDRumbler</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+		<li Class="CombatExtended.CompProperties_Charges">
+			 <chargeSpeeds>
+			   <li>25</li>
+			</chargeSpeeds>
+	    </li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>6</magazineSize>
+        <reloadTime>9.1</reloadTime>
+        <ammoSet>AmmoSet_60mmMortarShell</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_AI_Suppressive</li>
+    </weaponTags>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.20,1.20</DrawSize>
+        <DrawOffset>0.20,-0.10</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>
